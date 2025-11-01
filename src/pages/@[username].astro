@@ -3,11 +3,11 @@ import Layout from '@/layouts/layout.astro';
 import { Profile } from '@/components/profile';
 
 import { ResolveSourceService } from '@/services/resolve-source.service';
-import { GetCachedSource } from '@/usecases/get-cached-source.usecase';
-import { IncrementOrCreateVisit } from '@/usecases/increment-or-create-visit.usecase';
-import { MarkProfileInactive } from '@/usecases/mark-profile-inactive.usecase';
-import { CacheSource } from '@/usecases/cache-source.usecase';
-import { FetchSource } from '@/usecases/fetch-source.usecase';
+import { GetCachedSource } from '@/usecases/source/get-cached-source.usecase';
+import { IncrementOrCreateVisit } from '@/usecases/profile/increment-or-create-visit.usecase';
+import { MarkProfileInactive } from '@/usecases/profile/mark-profile-inactive.usecase';
+import { CacheSource } from '@/usecases/source/cache-source.usecase';
+import { FetchSource } from '@/usecases/source/fetch-source.usecase';
 import { ProfileDrizzleRepo } from '@/infrastructure/profile-drizzzle.repository';
 import { SourceRedisRepo } from '@/infrastructure/source-redis.repository';
 

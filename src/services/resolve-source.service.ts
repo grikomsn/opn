@@ -1,8 +1,8 @@
-import type { CacheSource } from '@/usecases/cache-source.usecase';
-import type { FetchSource } from '@/usecases/fetch-source.usecase';
-import type { GetCachedSource } from '@/usecases/get-cached-source.usecase';
-import type { IncrementOrCreateVisit } from '@/usecases/increment-or-create-visit.usecase';
-import type { MarkProfileInactive } from '@/usecases/mark-profile-inactive.usecase';
+import type { CacheSource } from '@/usecases/source/cache-source.usecase';
+import type { FetchSource } from '@/usecases/source/fetch-source.usecase';
+import type { GetCachedSource } from '@/usecases/source/get-cached-source.usecase';
+import type { IncrementOrCreateVisit } from '@/usecases/profile/increment-or-create-visit.usecase';
+import type { MarkProfileInactive } from '@/usecases/profile/mark-profile-inactive.usecase';
 
 export class ResolveSourceService {
   constructor(
